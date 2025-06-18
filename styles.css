@@ -326,6 +326,7 @@ nav>ul {
 }
 
 .hamburger-line {
+  position: fixed;
   display: block;
   width: 25px;
   height: 2px;
