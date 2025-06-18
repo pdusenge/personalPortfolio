@@ -20,7 +20,11 @@ function animateOnScroll() {
         const delay = entry.target.getAttribute('data-delay') || '0';
         
         entry.target.style.animationDelay = delay;
-        entry.target.classList.add(animation);
+        if (animation) {
+          entry.target.classList.add(animation);
+          
+        }
+        
         observer.unobserve(entry.target);
       }
     });
